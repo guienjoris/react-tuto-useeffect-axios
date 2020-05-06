@@ -17,8 +17,10 @@ function App() {
     };
     fetchData();
     console.log('mounted');
-  },[]) // [] important sinon boucle infini sur la requete
-   console.log(data);
+  },[]) 
+  /* [] important sinon boucle infini sur la requete,[] array vide === componentDidMount c'est a dire executer seulement au chargement du component,
+  on peut placer une ou plusieurs variable à surveiller dans l'array et à chaque changement de valeur de la variable 
+  il éxecutera la fonction de callback de useEffect() */
   return (
     <Fragment>
       <ul>
